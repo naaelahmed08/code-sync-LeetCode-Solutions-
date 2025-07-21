@@ -19,8 +19,15 @@ public:
             }
 
             if(comp_count == 3){
-                v.erase(i);
+                v.erase(v.begin() + i);
             }
         }
+        // for(int i = 0;i < v.size(); ++i){
+        //     v[i] >> ss;
+        // }
+        // cout << s;
+
+        string final(v.begin(), v.end());
+        return final;
     }
 };
